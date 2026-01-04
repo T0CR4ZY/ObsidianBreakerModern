@@ -1,0 +1,47 @@
+name: ObsidianBreakerModern
+version: 1.0.0
+main: com.obsidianbreaker.ObsidianBreakerModern
+api-version: '1.21'
+author: Claude
+description: Break obsidian and other hard blocks with TNT explosions. Perfect for Factions servers.
+website: https://github.com/obsidianbreaker
+
+commands:
+  obsidianbreaker:
+    description: Main command for ObsidianBreakerModern
+    usage: /<command> [tool|check|settool|list|stats|reload|clear|help]
+    aliases: [ob]
+
+permissions:
+  obsidianbreaker.*:
+    description: All ObsidianBreakerModern permissions
+    default: op
+    children:
+      obsidianbreaker.reload: true
+      obsidianbreaker.check: true
+      obsidianbreaker.clear: true
+      obsidianbreaker.list: true
+      obsidianbreaker.stats: true
+      obsidianbreaker.settool: true
+      obsidianbreaker.checktool.always: true
+  obsidianbreaker.reload:
+    description: Reload the configuration
+    default: op
+  obsidianbreaker.check:
+    description: Check block durability (command and tool)
+    default: true
+  obsidianbreaker.clear:
+    description: Clear all damage data
+    default: op
+  obsidianbreaker.list:
+    description: List configured blocks
+    default: op
+  obsidianbreaker.stats:
+    description: View plugin statistics
+    default: op
+  obsidianbreaker.settool:
+    description: Change the check tool item
+    default: op
+  obsidianbreaker.checktool.always:
+    description: Always have check tool enabled without /ob tool
+    default: op

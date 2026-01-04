@@ -1,0 +1,316 @@
+# ObsidianBreakerModern Configuration
+# A modern obsidian breaker for Minecraft 1.21+
+# Perfect for Factions servers!
+
+# General Settings
+settings:
+  # Radius around explosion to check for breakable blocks
+  explosion-radius: 3
+  
+  # Show particle effects when blocks take damage
+  show-cracks: true
+  
+  # Save block damage across server restarts
+  persist-damage: true
+  
+  # Allow explosions to damage blocks underwater
+  # Set to false to disable TNT cannons underwater
+  underwater-explosions: true
+  
+  # Check Tool - Right-click blocks to see their durability
+  check-tool:
+    # Enable the check tool feature
+    enabled: true
+    # Item to use as check tool (use /ob settool to change in-game)
+    # Players must run /ob tool to enable, then right-click blocks
+    item: STICK
+
+# Block Durabilities
+# Format: BLOCK_NAME: number_of_hits_to_break
+# Use Minecraft material names (uppercase with underscores)
+# Set to 0 or remove to make block unbreakable by explosions
+
+durability:
+  # ============================================
+  # OBSIDIAN VARIANTS
+  # ============================================
+  OBSIDIAN: 5
+  CRYING_OBSIDIAN: 5
+  
+  # ============================================
+  # ANCIENT/NETHERITE BLOCKS (very strong)
+  # ============================================
+  ANCIENT_DEBRIS: 8
+  NETHERITE_BLOCK: 10
+  
+  # ============================================
+  # ENDER BLOCKS
+  # ============================================
+  ENDER_CHEST: 3
+  END_STONE: 1
+  END_STONE_BRICKS: 1
+  END_STONE_BRICK_STAIRS: 1
+  END_STONE_BRICK_SLAB: 1
+  END_STONE_BRICK_WALL: 1
+  PURPUR_BLOCK: 1
+  PURPUR_PILLAR: 1
+  PURPUR_STAIRS: 1
+  PURPUR_SLAB: 1
+  END_ROD: 1
+  
+  # ============================================
+  # ENCHANTING/UTILITY BLOCKS
+  # ============================================
+  ENCHANTING_TABLE: 3
+  ANVIL: 2
+  CHIPPED_ANVIL: 2
+  DAMAGED_ANVIL: 2
+  BEACON: 4
+  CONDUIT: 3
+  
+  # ============================================
+  # RESPAWN/BED (for nether raiding)
+  # ============================================
+  RESPAWN_ANCHOR: 4
+  
+  # ============================================
+  # REINFORCED DEEPSLATE (1.19+)
+  # ============================================
+  REINFORCED_DEEPSLATE: 15
+  
+  # ============================================
+  # COPPER BLOCKS (all variants)
+  # ============================================
+  COPPER_BLOCK: 2
+  EXPOSED_COPPER: 2
+  WEATHERED_COPPER: 2
+  OXIDIZED_COPPER: 2
+  CUT_COPPER: 2
+  EXPOSED_CUT_COPPER: 2
+  WEATHERED_CUT_COPPER: 2
+  OXIDIZED_CUT_COPPER: 2
+  CUT_COPPER_STAIRS: 2
+  EXPOSED_CUT_COPPER_STAIRS: 2
+  WEATHERED_CUT_COPPER_STAIRS: 2
+  OXIDIZED_CUT_COPPER_STAIRS: 2
+  CUT_COPPER_SLAB: 2
+  EXPOSED_CUT_COPPER_SLAB: 2
+  WEATHERED_CUT_COPPER_SLAB: 2
+  OXIDIZED_CUT_COPPER_SLAB: 2
+  WAXED_COPPER_BLOCK: 2
+  WAXED_EXPOSED_COPPER: 2
+  WAXED_WEATHERED_COPPER: 2
+  WAXED_OXIDIZED_COPPER: 2
+  WAXED_CUT_COPPER: 2
+  WAXED_EXPOSED_CUT_COPPER: 2
+  WAXED_WEATHERED_CUT_COPPER: 2
+  WAXED_OXIDIZED_CUT_COPPER: 2
+  COPPER_DOOR: 2
+  EXPOSED_COPPER_DOOR: 2
+  WEATHERED_COPPER_DOOR: 2
+  OXIDIZED_COPPER_DOOR: 2
+  WAXED_COPPER_DOOR: 2
+  WAXED_EXPOSED_COPPER_DOOR: 2
+  WAXED_WEATHERED_COPPER_DOOR: 2
+  WAXED_OXIDIZED_COPPER_DOOR: 2
+  COPPER_TRAPDOOR: 2
+  EXPOSED_COPPER_TRAPDOOR: 2
+  WEATHERED_COPPER_TRAPDOOR: 2
+  OXIDIZED_COPPER_TRAPDOOR: 2
+  WAXED_COPPER_TRAPDOOR: 2
+  WAXED_EXPOSED_COPPER_TRAPDOOR: 2
+  WAXED_WEATHERED_COPPER_TRAPDOOR: 2
+  WAXED_OXIDIZED_COPPER_TRAPDOOR: 2
+  COPPER_GRATE: 2
+  EXPOSED_COPPER_GRATE: 2
+  WEATHERED_COPPER_GRATE: 2
+  OXIDIZED_COPPER_GRATE: 2
+  WAXED_COPPER_GRATE: 2
+  WAXED_EXPOSED_COPPER_GRATE: 2
+  WAXED_WEATHERED_COPPER_GRATE: 2
+  WAXED_OXIDIZED_COPPER_GRATE: 2
+  COPPER_BULB: 2
+  EXPOSED_COPPER_BULB: 2
+  WEATHERED_COPPER_BULB: 2
+  OXIDIZED_COPPER_BULB: 2
+  WAXED_COPPER_BULB: 2
+  WAXED_EXPOSED_COPPER_BULB: 2
+  WAXED_WEATHERED_COPPER_BULB: 2
+  WAXED_OXIDIZED_COPPER_BULB: 2
+  CHISELED_COPPER: 2
+  EXPOSED_CHISELED_COPPER: 2
+  WEATHERED_CHISELED_COPPER: 2
+  OXIDIZED_CHISELED_COPPER: 2
+  WAXED_CHISELED_COPPER: 2
+  WAXED_EXPOSED_CHISELED_COPPER: 2
+  WAXED_WEATHERED_CHISELED_COPPER: 2
+  WAXED_OXIDIZED_CHISELED_COPPER: 2
+  
+  # ============================================
+  # DEEPSLATE BLOCKS (harder than stone)
+  # ============================================
+  DEEPSLATE: 2
+  COBBLED_DEEPSLATE: 2
+  POLISHED_DEEPSLATE: 2
+  DEEPSLATE_BRICKS: 2
+  CRACKED_DEEPSLATE_BRICKS: 2
+  DEEPSLATE_TILES: 2
+  CRACKED_DEEPSLATE_TILES: 2
+  CHISELED_DEEPSLATE: 2
+  COBBLED_DEEPSLATE_STAIRS: 2
+  POLISHED_DEEPSLATE_STAIRS: 2
+  DEEPSLATE_BRICK_STAIRS: 2
+  DEEPSLATE_TILE_STAIRS: 2
+  COBBLED_DEEPSLATE_SLAB: 2
+  POLISHED_DEEPSLATE_SLAB: 2
+  DEEPSLATE_BRICK_SLAB: 2
+  DEEPSLATE_TILE_SLAB: 2
+  COBBLED_DEEPSLATE_WALL: 2
+  POLISHED_DEEPSLATE_WALL: 2
+  DEEPSLATE_BRICK_WALL: 2
+  DEEPSLATE_TILE_WALL: 2
+  
+  # ============================================
+  # TUFF BLOCKS (1.21+)
+  # ============================================
+  TUFF: 1
+  TUFF_STAIRS: 1
+  TUFF_SLAB: 1
+  TUFF_WALL: 1
+  CHISELED_TUFF: 1
+  POLISHED_TUFF: 1
+  POLISHED_TUFF_STAIRS: 1
+  POLISHED_TUFF_SLAB: 1
+  POLISHED_TUFF_WALL: 1
+  TUFF_BRICKS: 1
+  TUFF_BRICK_STAIRS: 1
+  TUFF_BRICK_SLAB: 1
+  TUFF_BRICK_WALL: 1
+  CHISELED_TUFF_BRICKS: 1
+  
+  # ============================================
+  # BLACKSTONE BLOCKS
+  # ============================================
+  BLACKSTONE: 2
+  POLISHED_BLACKSTONE: 2
+  POLISHED_BLACKSTONE_BRICKS: 2
+  CRACKED_POLISHED_BLACKSTONE_BRICKS: 2
+  CHISELED_POLISHED_BLACKSTONE: 2
+  GILDED_BLACKSTONE: 2
+  BLACKSTONE_STAIRS: 2
+  POLISHED_BLACKSTONE_STAIRS: 2
+  POLISHED_BLACKSTONE_BRICK_STAIRS: 2
+  BLACKSTONE_SLAB: 2
+  POLISHED_BLACKSTONE_SLAB: 2
+  POLISHED_BLACKSTONE_BRICK_SLAB: 2
+  BLACKSTONE_WALL: 2
+  POLISHED_BLACKSTONE_WALL: 2
+  POLISHED_BLACKSTONE_BRICK_WALL: 2
+  
+  # ============================================
+  # BASALT BLOCKS
+  # ============================================
+  BASALT: 1
+  POLISHED_BASALT: 1
+  SMOOTH_BASALT: 1
+  
+  # ============================================
+  # IRON/METAL BLOCKS
+  # ============================================
+  IRON_BLOCK: 3
+  GOLD_BLOCK: 3
+  DIAMOND_BLOCK: 4
+  EMERALD_BLOCK: 4
+  LAPIS_BLOCK: 2
+  REDSTONE_BLOCK: 2
+  COAL_BLOCK: 2
+  RAW_IRON_BLOCK: 2
+  RAW_GOLD_BLOCK: 2
+  RAW_COPPER_BLOCK: 2
+  AMETHYST_BLOCK: 2
+  
+  # ============================================
+  # IRON DOORS/BARS (commonly used in bases)
+  # ============================================
+  IRON_DOOR: 2
+  IRON_TRAPDOOR: 2
+  IRON_BARS: 2
+  CHAIN: 2
+  
+  # ============================================
+  # SCULK BLOCKS (1.19+)
+  # ============================================
+  SCULK: 1
+  SCULK_CATALYST: 2
+  SCULK_SHRIEKER: 2
+  SCULK_SENSOR: 2
+  CALIBRATED_SCULK_SENSOR: 2
+  SCULK_VEIN: 1
+  
+  # ============================================
+  # PRISMARINE BLOCKS
+  # ============================================
+  PRISMARINE: 2
+  PRISMARINE_BRICKS: 2
+  DARK_PRISMARINE: 2
+  SEA_LANTERN: 2
+  PRISMARINE_STAIRS: 2
+  PRISMARINE_BRICK_STAIRS: 2
+  DARK_PRISMARINE_STAIRS: 2
+  PRISMARINE_SLAB: 2
+  PRISMARINE_BRICK_SLAB: 2
+  DARK_PRISMARINE_SLAB: 2
+  PRISMARINE_WALL: 2
+  
+  # ============================================
+  # NETHER BLOCKS
+  # ============================================
+  NETHER_BRICKS: 1
+  RED_NETHER_BRICKS: 1
+  CHISELED_NETHER_BRICKS: 1
+  CRACKED_NETHER_BRICKS: 1
+  NETHER_BRICK_STAIRS: 1
+  RED_NETHER_BRICK_STAIRS: 1
+  NETHER_BRICK_SLAB: 1
+  RED_NETHER_BRICK_SLAB: 1
+  NETHER_BRICK_WALL: 1
+  RED_NETHER_BRICK_WALL: 1
+  NETHER_BRICK_FENCE: 1
+  QUARTZ_BLOCK: 1
+  SMOOTH_QUARTZ: 1
+  CHISELED_QUARTZ_BLOCK: 1
+  QUARTZ_BRICKS: 1
+  QUARTZ_PILLAR: 1
+  QUARTZ_STAIRS: 1
+  SMOOTH_QUARTZ_STAIRS: 1
+  QUARTZ_SLAB: 1
+  SMOOTH_QUARTZ_SLAB: 1
+  
+  # ============================================
+  # BEDROCK (very hard - optional)
+  # ============================================
+  # BEDROCK: 50
+  
+  # ============================================
+  # CRYING OBSIDIAN VARIANTS
+  # ============================================
+  # Already defined above
+  
+  # ============================================
+  # STORAGE BLOCKS (optional - might want protected)
+  # ============================================
+  # CHEST: 1
+  # TRAPPED_CHEST: 1
+  # BARREL: 1
+  # SHULKER_BOX: 2
+  # WHITE_SHULKER_BOX: 2
+  # (add all shulker colors if desired)
+
+# ============================================
+# WORLDS CONFIGURATION
+# ============================================
+# Uncomment and configure to disable in certain worlds
+# disabled-worlds:
+#   - hub
+#   - spawn
+#   - lobby
